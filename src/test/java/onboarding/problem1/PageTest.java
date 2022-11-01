@@ -20,7 +20,7 @@ class PageTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"3", "5", "7"})
+    @ValueSource(strings = {"3", "5", "7 "})
     void 오른쪽_페이지는_짝수만_들어갈_수_있습니다(final String input) {
         assertThatThrownBy(() -> {
             Page rightPage = new RightPage(Integer.parseInt(input));
